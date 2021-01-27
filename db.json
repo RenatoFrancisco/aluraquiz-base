@@ -1,28 +1,78 @@
 {
   "bg": "https://images6.alphacoders.com/942/thumb-1920-942590.jpg",
-  "title": "Quiz Resident Evil 2",
+  "title": "Quiz RE2",
   "description": "Teste seus conhecimentos sobre um dos melhores jogos de Survivor Horror.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media2.giphy.com/media/69sRPbBQq9YgBIjAxH/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "title": "Quem são os protagonista de Resident Evil 2?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Leon S Kennedy e Jill Valentine",
+        "Ada Wong e Leon S Kennedy e ",
+        "Claire Redfield e Chris Redfield",
+        "Leon S Kennedy e Claire Redfield"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media2.giphy.com/media/xTiIzneFAs0TpnFOLe/100.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=100.webp",
+      "title": "Em que ano foi lançado Resident Evil 2?",
+      "description": "Faz tempo, hein! haha",
+      "answer": 1,
+      "alternatives": [
+         "1996",
+         "1998",
+         "1999",
+         "2000"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/xKBdOkTB8NWFkSMiM8/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "title": "Em qual cidade Resident Evil 2 é ambientado?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+         "New York",
+         "Silent Hills",
+         "Raccoon",
+         "Los Angeles"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/69sRPbBQq9YgBIjAxH/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "title": "Em qual dos consoles abaixo Resident Evil 2 nunca foi lançado?",
+      "description": "",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Sega Saturn",
+        "Nintendo 64",
+        "Dreamcast",
+        "Game Cube"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/xTiIzneFAs0TpnFOLe/100.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=100.webp",
+      "title": "Qual o nome do Vírus responsável por transformar humanos em zumbis?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Y-Vírus",
+        "T-Vírus",
+        "Ebola",
+        "H5N1"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/xKBdOkTB8NWFkSMiM8/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "title": "Qual empresa desenvolveu Resident Evil?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Konami",
+        "Nintendo",
+        "Capcom",
+        "Square Enix"
       ]
     }
   ],
