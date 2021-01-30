@@ -2,10 +2,9 @@
   "bg": "https://images6.alphacoders.com/942/thumb-1920-942590.jpg",
   "title": "Quiz Resivent Evil 2",
   "description": "Teste seus conhecimentos sobre um dos melhores jogos de Survivor Horror.",
-  "loading": "https://i.gifer.com/8Etj.gif",
   "questions": [
     {
-      "image": "https://media2.giphy.com/media/69sRPbBQq9YgBIjAxH/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9V9tU_8gaI4yPGMBYj88dWl5j2-C_MytVA&usqp=CAU",
       "title": "Quem são os protagonista de Resident Evil 2?",
       "description": "Essa é pra aquecer",
       "answer": 3,
@@ -17,7 +16,7 @@
       ]
     },
     {
-      "image": "https://media2.giphy.com/media/xTiIzneFAs0TpnFOLe/100.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=100.webp",
+      "image": "https://images.gamewatcherstatic.com/news/image/4/a8/36664/index_re2.jpg",
       "title": "Em que ano foi lançado Resident Evil 2?",
       "description": "Faz tempo, hein! haha",
       "answer": 1,
@@ -29,7 +28,7 @@
       ]
     },
     {
-      "image": "https://media2.giphy.com/media/xKBdOkTB8NWFkSMiM8/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILi7vt3vVuclr4CJY21WoHLYKl0vnWSH2YQ&usqp=CAU",
       "title": "Em qual cidade Resident Evil 2 é ambientado?",
       "description": "",
       "answer": 2,
@@ -41,7 +40,7 @@
       ]
     },
     {
-      "image": "https://media2.giphy.com/media/69sRPbBQq9YgBIjAxH/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "image": "https://www.oficinadanet.com.br/imagens/post/15245/1.jpg",
       "title": "Em qual dos consoles abaixo Resident Evil 2 nunca foi lançado?",
       "description": "",
       "answer": 0,
@@ -53,7 +52,7 @@
       ]
     },
     {
-      "image": "https://media2.giphy.com/media/xTiIzneFAs0TpnFOLe/100.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=100.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz08-kTfBN676GaV5JVO9oeONraxQwc3fTLg&usqp=CAU",
       "title": "Qual o nome do Vírus responsável por transformar humanos em zumbis?",
       "description": "",
       "answer": 1,
@@ -65,7 +64,7 @@
       ]
     },
     {
-      "image": "https://media2.giphy.com/media/xKBdOkTB8NWFkSMiM8/200w.webp?cid=ecf05e47jbhnhabc9t1uz7nenqqggsbzldqz9ez18e80ibt3&rid=200w.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjJEzK6weX8GpX4olRJGNQ93hwbeDP-nzCA&usqp=CAU",
       "title": "Qual empresa desenvolveu Resident Evil?",
       "description": "",
       "answer": 2,
@@ -78,7 +77,9 @@
     }
   ],
   "external": [
-    ""
+    "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+    "https://alura-quiz-avengers.fernanda-kipper.vercel.app/",
+    "https://aluraquiz-halloween.lucaskuhn.vercel.app/"
   ],
   "theme": {
     "colors": {
