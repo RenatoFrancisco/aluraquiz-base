@@ -72,7 +72,7 @@ function LoadingWidget({ playerName }) {
   return (
     <Widget>
       <Widget.Header>
-        {message}
+        <h2>{message}</h2>
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>

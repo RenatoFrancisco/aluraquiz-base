@@ -53,7 +53,8 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <h2>{db.description}</h2>
+            <br />
             <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name.toUpperCase()}`);
@@ -66,7 +67,8 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={!filledName}>
-                {`Jogar ${name}`}
+                {!filledName && 'Jogar'}
+                {filledName && `Vamos jogar, ${name}!`}
               </Button>
             </form>
           </Widget.Content>
