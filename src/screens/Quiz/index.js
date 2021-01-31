@@ -18,6 +18,9 @@ function ResultWidget({ results, playerName }) {
   const correctsAnswers = results.filter((x) => x).length;
   const totalQuetions = results.length;
   const score = ((correctsAnswers / totalQuetions) * 100).toFixed(2);
+  const message = playerName !== undefined
+    ? `${playerName}, você acertou`
+    : 'Você acertou';
 
   return (
     <Widget>
@@ -30,7 +33,7 @@ function ResultWidget({ results, playerName }) {
 
       <Widget.Content>
         <h4>
-          {`${playerName}, você acertou`}
+          {message}
           {' '}
           {correctsAnswers}
           {' '}
@@ -62,10 +65,14 @@ function ResultWidget({ results, playerName }) {
 }
 
 function LoadingWidget({ playerName }) {
+  const message = playerName !== undefined
+    ? `${playerName}, por favor aguarde...`
+    : 'Por favor aguarde...';
+
   return (
     <Widget>
       <Widget.Header>
-        {`${playerName}, por favor aguarde...`}
+        {message}
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
