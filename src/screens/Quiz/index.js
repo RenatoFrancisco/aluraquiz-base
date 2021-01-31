@@ -50,6 +50,10 @@ function ResultWidget({ results, playerName }) {
             </li>
           ))}
         </ul>
+        {/* eslint-disable-next-line no-return-assign */}
+        <Button type="button" onClick={() => window.location.href = '/'}>
+          Jogar novamente
+        </Button>
       </Widget.Content>
     </Widget>
   );
