@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
+import { useRouter } from 'next/router';
+
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -10,7 +12,9 @@ import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
 
-function ResultWidget({ results }) {
+function ResultWidget({ results, playerName }) {
+  console.log(playerName);
+
   return (
     <Widget>
       <Widget.Header>
@@ -20,11 +24,11 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          {`${playerName}, você acertou`}
           {' '}
           {results.filter((x) => x).length}
           {' '}
-          perguntas
+          perguntas.
         </p>
         <ul>
           {results.map((result, index) => (
@@ -44,11 +48,11 @@ function ResultWidget({ results }) {
   );
 }
 
-function LoadingWidget() {
+function LoadingWidget({ playerName }) {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        {`${playerName}, por favor aguarde.`}
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
@@ -165,6 +169,8 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   const question = externalQuestions[questionIndex];
   const totalQuestions = externalQuestions.length;
   const bg = externalBg;
+  const router = useRouter();
+  const { name } = router.query;
 
   function addResult(result) {
     setResults([
@@ -203,9 +209,10 @@ export default function QuizPage({ externalQuestions, externalBg }) {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING && <LoadingWidget playerName={name} />}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {screenState === screenStates.RESULT
+          && <ResultWidget results={results} playerName={name} />}
       </QuizContainer>
     </QuizBackground>
   );
