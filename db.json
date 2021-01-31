@@ -6,7 +6,7 @@
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9V9tU_8gaI4yPGMBYj88dWl5j2-C_MytVA&usqp=CAU",
       "title": "Quem são os protagonista de Resident Evil 2?",
-      "description": "Essa é pra aquecer",
+      "description": "",
       "answer": 3,
       "alternatives": [
         "Leon S Kennedy e Jill Valentine",
@@ -17,8 +17,8 @@
     },
     {
       "image": "https://images.gamewatcherstatic.com/news/image/4/a8/36664/index_re2.jpg",
-      "title": "Em que ano foi lançado Resident Evil 2?",
-      "description": "Faz tempo, hein! haha",
+      "title": "Em que ano foi lançado Resident Evil 2 (original)?",
+      "description": "",
       "answer": 1,
       "alternatives": [
          "1996",
