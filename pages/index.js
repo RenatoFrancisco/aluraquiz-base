@@ -120,7 +120,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/RenatoFrancisco" />
+      <GitHubCorner projectUrl="https://github.com/RenatoFrancisco/aluraquiz-base" />
     </QuizBackground>
   );
 }
