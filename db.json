@@ -5,7 +5,7 @@
   "questions": [
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9V9tU_8gaI4yPGMBYj88dWl5j2-C_MytVA&usqp=CAU",
-      "title": "Quem são os protagonista de Resident Evil 2?",
+      "title": "Quem são os protagonistas de Resident Evil 2?",
       "description": "",
       "answer": 3,
       "alternatives": [
@@ -53,7 +53,7 @@
     },
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz08-kTfBN676GaV5JVO9oeONraxQwc3fTLg&usqp=CAU",
-      "title": "Qual o nome do Vírus responsável por transformar humanos em zumbis?",
+      "title": "Qual o nome do vírus responsável por transformar humanos em zumbis?",
       "description": "",
       "answer": 1,
       "alternatives": [
