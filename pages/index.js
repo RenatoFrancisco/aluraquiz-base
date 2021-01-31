@@ -83,8 +83,11 @@ export default function Home() {
           initial="hidden"
           animate="show"
         >
+          <Widget.Header>
+            <h2>Quizes da Galera</h2>
+          </Widget.Header>
+
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
 
             <ul>
               {db.external.map((linkExterno) => {
