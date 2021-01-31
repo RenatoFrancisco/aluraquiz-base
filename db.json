@@ -79,7 +79,8 @@
   "external": [
     "https://breaking-bad-quiz.eliasnepo.vercel.app/",
     "https://alura-quiz-avengers.fernanda-kipper.vercel.app/",
-    "https://aluraquiz-halloween.lucaskuhn.vercel.app/"
+    "https://aluraquiz-halloween.lucaskuhn.vercel.app/",
+    "https://lotr-quiz.filipe1309.vercel.app/"
   ],
   "theme": {
     "colors": {

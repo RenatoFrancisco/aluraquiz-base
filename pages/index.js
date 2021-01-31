@@ -28,6 +28,7 @@ const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+  const filledName = name.length > 0;
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -56,7 +57,7 @@ export default function Home() {
             <p>{db.description}</p>
             <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
-              router.push(`/quiz?name=${name}`);
+              router.push(`/quiz?name=${name.toUpperCase()}`);
             }}
             >
               <Input
@@ -65,7 +66,7 @@ export default function Home() {
                 placeholder="Informe seu nome"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={!filledName}>
                 {`Jogar ${name}`}
               </Button>
             </form>
@@ -97,7 +98,8 @@ export default function Home() {
                   <li key={linkExterno}>
                     <Widget.Topic
                       as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
+                      href={filledName ? `/quiz/${projectName}___${githubUser}` : '/'}
+                      style={{ opacity: filledName ? 'unset' : 0.5, cursor: filledName ? 'pointer' : 'not-allowed' }}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>

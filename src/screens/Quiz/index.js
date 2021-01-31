@@ -13,23 +13,30 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results, playerName }) {
-  console.log(playerName);
+  const correctsAnswers = results.filter((x) => x).length;
+  const totalQuetions = results.length;
+  const score = ((correctsAnswers / totalQuetions) * 100).toFixed(2);
 
   return (
     <Widget>
       <Widget.Header>
         <BackLinkArrow href="/" />
-        Tela de Resultado:
+        <h3>
+          Tela de Resultado
+        </h3>
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <h2>
           {`${playerName}, você acertou`}
           {' '}
-          {results.filter((x) => x).length}
+          {correctsAnswers}
           {' '}
-          perguntas.
-        </p>
+          {`perguntas de ${totalQuetions}.` }
+        </h2>
+        <h2>
+          {`Taxa de acertos: ${score}%`}
+        </h2>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -38,8 +45,8 @@ function ResultWidget({ results, playerName }) {
               {' '}
               Resultado:
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? ' Acertou'
+                : ' Errou'}
             </li>
           ))}
         </ul>
@@ -52,7 +59,7 @@ function LoadingWidget({ playerName }) {
   return (
     <Widget>
       <Widget.Header>
-        {`${playerName}, por favor aguarde.`}
+        {`${playerName}, por favor aguarde...`}
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
