@@ -62,7 +62,7 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                placeholder="Diz ai seu nome"
+                placeholder="Informe seu nome"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
