@@ -11,6 +11,8 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
+import correctAnswer from './animations/correct-answer.json';
+import wrongAnswer from './animations/wrong-answer.json';
 
 function ResultWidget({ results, playerName }) {
   const correctsAnswers = results.filter((x) => x).length;
@@ -27,16 +29,16 @@ function ResultWidget({ results, playerName }) {
       </Widget.Header>
 
       <Widget.Content>
-        <h2>
+        <h4>
           {`${playerName}, você acertou`}
           {' '}
           {correctsAnswers}
           {' '}
-          {`perguntas de ${totalQuetions}.` }
-        </h2>
-        <h2>
+          {` de ${totalQuetions}.` }
+        </h4>
+        <h4>
           {`Taxa de acertos: ${score}%`}
-        </h2>
+        </h4>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -45,8 +47,8 @@ function ResultWidget({ results, playerName }) {
               {' '}
               Resultado:
               {result === true
-                ? ' Acertou'
-                : ' Errou'}
+                ? ' acertou (:'
+                : ' errou ):'}
             </li>
           ))}
         </ul>
@@ -159,8 +161,26 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          <br />
+          <br />
+          {isQuestionSubmited && isCorrect
+            && (
+            <Lottie
+              width="50px"
+              height="50px"
+              className="lottie-container basic"
+              config={{ animationData: correctAnswer, loop: false, autoplay: true }}
+            />
+            )}
+          {isQuestionSubmited && !isCorrect
+            && (
+              <Lottie
+                width="50px"
+                height="50px"
+                className="lottie-container basic"
+                config={{ animationData: wrongAnswer, loop: false, autoplay: true }}
+              />
+            )}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
