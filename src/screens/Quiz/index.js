@@ -66,8 +66,8 @@ function ResultWidget({ results, playerName }) {
 
 function LoadingWidget({ playerName }) {
   const message = playerName !== undefined
-    ? `${playerName}, por favor aguarde...`
-    : 'Por favor aguarde...';
+    ? `${playerName}, por favor, aguarde...`
+    : 'Por favor, aguarde...';
 
   return (
     <Widget>
@@ -156,6 +156,7 @@ function QuestionWidget({
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
+                  checked={false}
                 />
                 {alternative}
               </Widget.Topic>
