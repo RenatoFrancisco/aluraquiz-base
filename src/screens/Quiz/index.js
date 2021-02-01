@@ -219,10 +219,9 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   }
 
   React.useEffect(() => {
-    // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 3 * 2000);
+    }, 3 * 1000);
   }, []);
 
   function handleSubmitQuiz() {
